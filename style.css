@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.tip{
+    width: 100%;
+    color: #fff;
+    background: #2d3142;
+}
+.btn-active{
+    color: #2d3142;
+    font-weight: 600;
+    background: #CCCCFF;
+}
+.error_msg{
+    color: #2d3142;
+    float: right;
+    opacity: 0;
+}
+.show_errormsg{
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+input{
+   border-radius: 5%;
+   border-style: none;
+}
