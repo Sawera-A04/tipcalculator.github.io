@@ -30,3 +30,12 @@ input{
    border-radius: 5%;
    border-style: none;
 }
+.main-header{
+    text-align: center;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-family: verdana;
+    letter-spacing: 3px;
+    color: #2d3142;
+    font-weight: 600;
+}
