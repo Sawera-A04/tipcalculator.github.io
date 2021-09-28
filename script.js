@@ -4,6 +4,7 @@ const customTip = document.getElementById('cus-tip');
 const person = document.getElementById('people');
 const errormsg = document.querySelector('.error_msg');
 const result = document.querySelectorAll('.value');
+const reset = document.querySelector('.reset');
 
 getBill.addEventListener('input', getBillValue);
 alltipBtns.forEach(btn => {
@@ -12,7 +13,9 @@ alltipBtns.forEach(btn => {
 
 customTip.addEventListener('input', setCustomValue);
 person.addEventListener('input', setPersonValue);
+reset.addEventListener('click', resetAll);
 
+// default values and initialization
 let billValue = 0.0;
 let tipValue = 0.15;
 let personValue = 1;
@@ -102,5 +105,13 @@ function calculateTip(){
     }
 } 
 
+function resetAll(){
+    getBill.value = '0.0';
+    getBillValue();
+
+    alltipBtns[2].click();
+    person.value = 1;
+    setPersonValue();
+}
 
 //console.log(alltipBtns[0].innerHTML);
